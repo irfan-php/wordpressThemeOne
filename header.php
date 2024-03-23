@@ -15,5 +15,7 @@
     <title>Theme One</title>
     <?php wp_head(); ?>
  </head>
- <body>
-    <header> Header Part </header>
+ <body style="display: flex; flex-direction: column; min-height: 100%;">
+   <header> 
+      <?php get_template_part('template-parts/header/nav'); ?>
+   </header>

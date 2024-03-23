@@ -7,10 +7,13 @@
  */
 ?>
 
-<?php get_header(); ?>
-<div class="content">
-    This is a sample content
-</div>
 <?php 
+
+get_header();
+?>
+<main style="flex: 1;">
+     Add your main content here 
+</main>
+<?php
 get_footer();
-    
+?>
