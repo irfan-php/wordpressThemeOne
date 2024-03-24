@@ -6,6 +6,20 @@
  * @package ThemeOne
  */
 
+    if ( ! defined('ThemeOne_DIR_PATH'))
+    {
+        define( 'ThemeOne_DIR_PATH' , untrailingslashit( get_template_directory() ));
+    }
+
+    require_once ThemeOne_DIR_PATH . '/inc/helpers/autoloader.php';
+
+    function themeOne_get_theme_instance()
+    {
+        \ThemeOne_THEME\Inc\ThemeOne_THEME::get_instance();
+    }
+
+    themeOne_get_theme_instance();
+
     function themeOne_enqueue_style()
     {
 
